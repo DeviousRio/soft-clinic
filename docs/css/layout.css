@@ -1,3 +1,4 @@
+/* Site */
 .site {
     max-width: var(--layout-main-width);
     margin: 0 auto;
@@ -16,6 +17,7 @@
     }
 }
 
+/* Image section */
 .image-section {
     display: flex;
     align-items: center;
@@ -55,4 +57,35 @@
 .image-section img {
     width: 100%;
     height: auto;
+}
+
+/* Services section */
+.services .services-title {
+    text-align: center;
+    color: var(--color-services-title);
+    font-size: 3em;
+    padding: 0;
+}
+
+.services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.services li {
+    flex: 0 0 20%;
+    padding: 2em;
+    margin: 0 1em;
+    text-align: center;
+}
+
+.services li img {
+    width: 100%;
+    height: auto;
+}
+
+.services ul li p {
+    font-size: var(--font-size-body);
 }
