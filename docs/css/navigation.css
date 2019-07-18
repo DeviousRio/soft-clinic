@@ -54,7 +54,7 @@
 
 .site-nav a {
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.3em 0.5em;
     border-radius: 0.3em;
     background: #EEE;
 }
@@ -70,4 +70,9 @@
 
 .site-nav a i {
     margin-right: 0.3em;
+}
+
+.site-description {
+    flex: 0 0 100%;
+    padding-left: 0.2em;
 }
