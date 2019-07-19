@@ -1,0 +1,30 @@
+/* Footer section */
+.footer-section {
+    background: var(--color-body-gray);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.footer-section h6 {
+    font-weight: normal;
+}
+
+.footer-section ul {
+    padding: 0;
+    display: flex;
+    flex: 0 0 30%;
+}
+
+.footer-section li {
+    margin-left: 1em;
+}
+
+.footer-section p {
+    font-size: var(--font-size-body);
+    flex: 0 0 100%;
+    text-align: right;
+    padding: 0;
+    flex: 0 0 45%;
+}
