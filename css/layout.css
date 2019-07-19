@@ -90,6 +90,7 @@
     display: block;
     text-align: center;
     margin: 1em;
+    padding: 0 1em;
 }
 
 .services .services-list span {
@@ -97,7 +98,7 @@
 }
 
 .image-span {
-    width: 8em;
+    width: 10em;
     margin: 0 auto;
     display: block;
     border-radius: 50%;
@@ -139,4 +140,28 @@
 
 .services-list .service-description {
     font-size: 14px;
+}
+
+/* Footer image section */
+.footer-image {
+    display: block;
+}
+
+.footer-image-container {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.footer-image-container:before {
+    display: block;
+    content: '';
+    padding-top: 177,77%;
+}
+
+.footer-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
