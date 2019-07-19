@@ -14,7 +14,7 @@
 .footer-section ul {
     padding: 0;
     display: flex;
-    flex: 0 0 30%;
+    flex: 0 0 50%;
 }
 
 .footer-section li {
@@ -27,4 +27,8 @@
     text-align: right;
     padding: 0;
     flex: 0 0 45%;
+}
+
+.footer-section i {
+    font-size: 1.3em;
 }
