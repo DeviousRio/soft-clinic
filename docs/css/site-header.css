@@ -1,0 +1,58 @@
+@media (min-width: 1024px) {
+    .site-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .site-header nav {
+        margin-left: auto;
+    }
+}
+
+.site-header {
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 0.418) 0%, rgba(238, 238, 238, 0.795)), url('../images/hospital.jpg') center no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 1em 10em 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.site-header .site-title {
+    font-family: var(--font-family-libre);
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.info-section .info {
+    font-size: 1.5em;
+    padding: 3em 3em 0 3em;
+}
+
+.info-section a {
+    font-size: var(--font-size-body);
+    color: var(--color-body-background);
+    background: var(--color-link-default);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid var(--color-link-default);
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+.info-section a:hover {
+    background: var(--color-body-text);
+    color: var(--color-body-background);
+    border: 1px solid var(--color-body-text);
+}
+
+.header-image-container {
+    flex: 0 0 100%;
+}

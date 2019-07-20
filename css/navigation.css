@@ -33,7 +33,5 @@
 
 .site-description {
     flex: 0 0 100%;
-    margin-left: 0.2em;
-    color: var(--color-services-title);
     font-weight: normal;
 }
