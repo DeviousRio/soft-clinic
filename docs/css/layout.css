@@ -5,6 +5,36 @@
     padding: 0 1em 0 1em;
 }
 
+/* Emergency section */
+.emergency {
+    background: var(--color-emergency-section);
+    color: var(--color-body-background);
+    margin: 4em 4em 1em 4em;
+    padding: 2em;
+    display: flex;
+    position: relative;
+    text-align: left;
+    border-radius: 0.3em;
+}
+
+.emergency:after {
+    display: block;
+    content: url('../images/doc-1.png');
+    position: absolute;
+    top: 5; left: 0; right: 0; bottom: 0;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.emergency span {
+    display: block;
+    font-size: 1.5em;
+}
+
+.emergency .emergency-info {
+    flex: 0 0 100%;
+}
+
 /* Services section */
 .services .services-title {
     padding: 0;
