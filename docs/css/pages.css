@@ -1,0 +1,73 @@
+body:not(.page-home) .info-section {
+    display: none;
+}
+
+body:not(.page-home) .site-header {
+    padding: 0 1em 1em 1em;
+}
+
+body:not(.page-home) .site-description {
+    text-align: center;
+}
+
+/* About page */
+section.about {
+    background: var(--color-body-gray);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0 1em 0;
+    justify-content: center;
+    align-content: center;
+}
+
+section.about .about-title {
+    flex: 0 0 100%;
+    text-align: center;
+    color: var(--color-link-default);
+    margin-top: 1em;
+}
+
+section.about .about-title:after {
+    display: block;
+    content: '';
+    width: 15em;
+    height: 3px;
+    margin: 0.2em auto 0.5em auto;
+    background: var(--color-services-title);
+    border-radius: 0.3em;
+}
+
+section.about .about-content {
+    flex: 0 0 35%;
+    padding: 1em 1em 0 1em;
+}
+
+section.about .about-content p:not(:first-child) {
+    margin-top: 1em;
+}
+
+section.about .about-image {
+    width: 100%;
+    display: flex;
+    flex: 0 0 50%;
+    padding-top: 1em;
+}
+
+section.about span {
+    display: block;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+section.about span:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+section.about span img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
