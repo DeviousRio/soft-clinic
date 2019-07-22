@@ -32,7 +32,7 @@ section.about .about-title:after {
     content: '';
     width: 15em;
     height: 3px;
-    margin: 0.2em auto 0.5em auto;
+    margin: 0.5em auto 3em auto;
     background: var(--color-services-title);
     border-radius: 0.3em;
 }
@@ -70,4 +70,5 @@ section.about span img {
     display: block;
     width: 100%;
     height: auto;
+    box-shadow: -5px 0px 30px 0px rgba(0,0,0,0.75);
 }

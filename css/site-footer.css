@@ -21,12 +21,16 @@
     margin-left: 1em;
 }
 
+.footer-section li:nth-child(6) {
+    margin-left: auto;
+}
+
 .footer-section p {
     font-size: var(--font-size-body);
     flex: 0 0 100%;
     text-align: right;
     padding: 0;
-    flex: 0 0 45%;
+    flex: 0 0 30%;
 }
 
 .footer-section i {
