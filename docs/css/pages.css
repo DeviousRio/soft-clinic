@@ -73,42 +73,6 @@ section.about .about-content p {
     text-align: center;
 }
 
-/* section.about .about-content {
-    flex: 0 0 35%;
-    padding: 1em 1em 0 1em;
-}
-
-section.about .about-content p:not(:first-child) {
-    margin-top: 1em;
-}
-
-section.about .about-image {
-    width: 100%;
-    display: flex;
-    flex: 0 0 50%;
-    padding-top: 1em;
-}
-
-section.about span {
-    display: block;
-    position: relative;
-    padding-bottom: 2em;
-}
-
-section.about span:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-}
-
-section.about span img {
-    display: block;
-    width: 100%;
-    height: auto;
-    box-shadow: -5px 0px 30px 0px rgba(0,0,0,0.75);
-} */
-
 /* Gallery page */
 section.gallery-section {
     background: var(--color-body-gray);
@@ -118,7 +82,7 @@ section.gallery-section {
 section.gallery-section .gallery-title {
     text-align: center;
     color: var(--color-link-default);
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
 section.gallery-section .gallery-title:after {
@@ -147,24 +111,38 @@ section.gallery-section .gallery li {
     border-top: 1px solid var(--color-services-title);
     border-bottom: 1px solid var(--color-services-title);
     position: relative;
-    animation: slideIn 0.3s ease-in;
-    animation-fill-mode: both;
+    -webkit-animation: slideIn 0.3s ease-in;
+            animation: slideIn 0.3s ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 
-section.gallery-section .gallery li:nth-child(2) { animation-delay: 0.2s }
-section.gallery-section .gallery li:nth-child(3) { animation-delay: 0.4s }
-section.gallery-section .gallery li:nth-child(4) { animation-delay: 0.6s }
-section.gallery-section .gallery li:nth-child(5) { animation-delay: 0.8s }
-section.gallery-section .gallery li:nth-child(6) { animation-delay: 1.0s }
-section.gallery-section .gallery li:nth-child(7) { animation-delay: 1.2s }
-section.gallery-section .gallery li:nth-child(8) { animation-delay: 1.4s }
-section.gallery-section .gallery li:nth-child(9) { animation-delay: 1.6s }
-section.gallery-section .gallery li:nth-child(10) { animation-delay: 1.8s }
-section.gallery-section .gallery li:nth-child(11) { animation-delay: 2.0s }
-section.gallery-section .gallery li:nth-child(12) { animation-delay: 2.2s }
-section.gallery-section .gallery li:nth-child(13) { animation-delay: 2.4s }
-section.gallery-section .gallery li:nth-child(14) { animation-delay: 2.6s }
-section.gallery-section .gallery li:nth-child(15) { animation-delay: 2.8s }
+section.gallery-section .gallery li:nth-child(2) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s }
+section.gallery-section .gallery li:nth-child(3) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s }
+section.gallery-section .gallery li:nth-child(4) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s }
+section.gallery-section .gallery li:nth-child(5) { -webkit-animation-delay: 0.8s; animation-delay: 0.8s }
+section.gallery-section .gallery li:nth-child(6) { -webkit-animation-delay: 1.0s; animation-delay: 1.0s }
+section.gallery-section .gallery li:nth-child(7) { -webkit-animation-delay: 1.2s; animation-delay: 1.2s }
+section.gallery-section .gallery li:nth-child(8) { -webkit-animation-delay: 1.4s; animation-delay: 1.4s }
+section.gallery-section .gallery li:nth-child(9) { -webkit-animation-delay: 1.6s; animation-delay: 1.6s }
+section.gallery-section .gallery li:nth-child(10) { -webkit-animation-delay: 1.8s; animation-delay: 1.8s }
+section.gallery-section .gallery li:nth-child(11) { -webkit-animation-delay: 2.0s; animation-delay: 2.0s }
+section.gallery-section .gallery li:nth-child(12) { -webkit-animation-delay: 2.2s; animation-delay: 2.2s }
+section.gallery-section .gallery li:nth-child(13) { -webkit-animation-delay: 2.4s; animation-delay: 2.4s }
+section.gallery-section .gallery li:nth-child(14) { -webkit-animation-delay: 2.6s; animation-delay: 2.6s }
+section.gallery-section .gallery li:nth-child(15) { -webkit-animation-delay: 2.8s; animation-delay: 2.8s }
+
+@-webkit-keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-2em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 @keyframes slideIn {
     from {

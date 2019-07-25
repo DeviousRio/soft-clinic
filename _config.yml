@@ -3,6 +3,7 @@ title: SoftClinic
 email: soft-clinic@example.com
 description: Veterinary Clinic
 destination: docs
+#baseurl: ""
 baseurl: "/soft-clinic" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  DeviousRio
@@ -22,3 +23,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - docs
+  - _assets
+  - gulpfile.js
+  - package.json
+  - package-lock.json
