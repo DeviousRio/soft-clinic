@@ -14,7 +14,7 @@
     background: linear-gradient(to bottom, rgba(238, 238, 238, 0.418) 0%, rgba(238, 238, 238, 0.795)), url('../images/hospital.jpg') center no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 0 1em 10em 1em;
+    padding: 0 1em 5em 1em;
     justify-content: center;
     flex-wrap: wrap;
 }

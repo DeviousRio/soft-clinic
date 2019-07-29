@@ -7,6 +7,7 @@ body:not(.page-home) .site-header {
 }
 
 body:not(.page-home) .site-description {
+    font-size: 2em;
     padding: 2em;
     text-align: center;
 }
@@ -183,6 +184,82 @@ section.gallery-section .gallery img {
     height: auto;
 }
 
+/* Team page */
+section.team-section {
+    background: var(--color-body-gray);
+    margin: 1em 0 1em 0;
+}
 
+section.team-section .team-title {
+    text-align: center;
+    color: var(--color-link-default);
+    padding-top: 1em;
+}
 
+section.team-section .team-title:after {
+    display: block;
+    content: '';
+    width: 20em;
+    height: 3px;
+    margin: 0.5em auto 3em auto;
+    background: var(--color-services-title);
+    border-radius: 0.3em;
+}
 
+section.team-section .team-description {
+    text-align: center;
+    padding: 0 2em 2em 2em;
+}
+
+section.team-section .team {
+    display: grid;
+    padding: 0 0 1em 0;
+    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: start;
+}
+
+section.team-section a,
+section.team-section span,
+section.team-section img {
+    display: block;
+    pointer-events: none;
+}
+
+section.team-section .team li {
+    display: block;
+    grid-column: span 1;
+    text-align: center;
+    animation: slideIn 0.3s ease-in;
+    animation-fill-mode: both;
+}
+
+section.team-section .team li:nth-child(2) { animation-delay: 0.2s }
+section.team-section .team li:nth-child(3) { animation-delay: 0.4s }
+section.team-section .team li:nth-child(4) { animation-delay: 0.6s }
+section.team-section .team li:nth-child(5) { animation-delay: 0.8s }
+section.team-section .team li:nth-child(6) { animation-delay: 1.0s }
+section.team-section .team li:nth-child(7) { animation-delay: 1.2s }
+
+section.team-section img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.3em;
+}
+
+section.team-section .doc-name {
+    padding-top: 1em;
+    color: var(--color-link-default);
+}
+
+section.team-section .doc-description {
+    padding-top: 0.5em;
+}
+
+section.team-section .details i {
+    padding-right: 0.2em;
+    color: var(--color-link-default);
+}
