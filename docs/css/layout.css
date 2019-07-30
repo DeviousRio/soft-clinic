@@ -74,10 +74,10 @@
 }
 
 .image-span {
-    width: 10em;
+    width: 13em;
     margin: 0 auto;
     display: block;
-    border-radius: 50%;
+    border-radius: 0.3em;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
@@ -88,7 +88,7 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    border-radius: 50%;
+    border-radius: 0.3em;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5) inset;
     z-index: 10;
 }

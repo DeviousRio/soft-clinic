@@ -242,6 +242,32 @@ section.team-section .team li {
     animation-fill-mode: both;
 }
 
+section.team-section span {
+    width: 15em;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.3em;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+}
+
+section.team-section span:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5) inset;
+    z-index: 10;
+}
+
+section.team-section span:after {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
 section.team-section .team li:nth-child(2) { animation-delay: 0.2s }
 section.team-section .team li:nth-child(3) { animation-delay: 0.4s }
 section.team-section .team li:nth-child(4) { animation-delay: 0.6s }
@@ -250,10 +276,13 @@ section.team-section .team li:nth-child(6) { animation-delay: 1.0s }
 section.team-section .team li:nth-child(7) { animation-delay: 1.2s }
 
 section.team-section img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 0.3em;
+    display: block;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 }
 
 section.team-section .doc-name {
