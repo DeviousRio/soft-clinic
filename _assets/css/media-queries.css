@@ -1,12 +1,57 @@
-@media ( max-width: 1024px ) {
-    
+@media (max-width: 1024px) {
+
+    /* header and navigation */
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* home page */
+    /* info section */
+    .info-section {
+        flex: 0 0 100%;
+    }
+
+    .info-section .info {
+        font-size: 1.5em;
+        padding: 2em 1em 1em 1em;
+    }
+
+    /* services section */
+    .services .services-list {
+        justify-content: space-around;
+    }
 }
 
-@media ( max-width: 960px ) {
+@media (max-width: 960px) {
 
+    /* header and navigation */
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* home page */
+    /* info section */
+    .info-section {
+        flex: 0 0 100%;
+    }
+
+    .info-section .info {
+        font-size: 1.5em;
+        padding: 2em 1em 1em 1em;
+    }
+
+    /* services section */
+    .services .services-list {
+        justify-content: space-around;
+    }
 }
 
-@media ( max-width: 768px ) {
+@media (max-width: 768px) {
+
     /* top navigation */
     .top-nav li:nth-child(6) {
         text-align: center;
@@ -19,11 +64,17 @@
 
     /* header and navigation */
     .site-header {
+        display: flex;
         padding-bottom: 1.5em;
     }
 
     .site-title {
+        flex: 0 0 100%;
         text-align: center;
+    }
+
+    .site-nav {
+        flex: 0 0 100%;
     }
 
     .site-nav ul {
@@ -45,7 +96,7 @@
         margin-top: 1em;
     }
 
-     /* home page */
+    /* home page */
     /* info section */
     .info-section .info {
         font-size: 1em;
@@ -56,11 +107,10 @@
         margin-top: 1em;
     }
 
-     /* emergency section */
-     .emergency {
+    /* emergency section */
+    .emergency {
         margin: 2em 2em 1em 2em;
     }
-
 
     .emergency span {
         font-size: 1.2em;
@@ -71,8 +121,8 @@
         justify-content: center;
     }
 
-     /* footer */
-     .footer-section {
+    /* footer */
+    .footer-section {
         display: flex;
     }
 
@@ -88,9 +138,10 @@
     }
 }
 
-@media ( max-width: 640px ) {
-     /* top navigation */
-     .top-nav li:nth-child(6) {
+@media (max-width: 640px) {
+
+    /* top navigation */
+    .top-nav li:nth-child(6) {
         text-align: center;
         flex: 0 0 35%;
         font-size: var(--font-size-small);
@@ -103,169 +154,86 @@
 
     /* header and navigation */
     .site-header {
-       padding-bottom: 1.5em;
-   }
+        display: flex;
+        padding-bottom: 1.5em;
+    }
 
-   .site-title {
-       text-align: center;
-   }
+    .site-title {
+        flex: 0 0 100%;
+        text-align: center;
+    }
 
-   .site-nav ul {
-       flex-direction: column;
-       align-items: center;
-   }
+    .site-nav {
+        flex: 0 0 100%;
+    }
 
-   .site-nav li {
-       width: 200px;
-       margin-top: 0.5em;
-   }
+    .site-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .site-nav i {
-       padding-left: 2.5em;
-   }
+    .site-nav li {
+        width: 200px;
+        margin-top: 0.5em;
+    }
 
-   .site-description {
-       text-align: center;
-       margin-top: 1em;
-   }
+    .site-nav i {
+        padding-left: 2.5em;
+    }
+
+    .site-description {
+        text-align: center;
+        margin-top: 1em;
+    }
 
     /* home page */
-   /* info section */
-   .info-section .info {
-       font-size: 1em;
-       padding-top: 1em;
-   }
+    /* info section */
+    .info-section .info {
+        font-size: 1em;
+        padding-top: 1em;
+    }
 
-   .info-section a {
-       margin-top: 1em;
-   }
+    .info-section a {
+        margin-top: 1em;
+    }
 
     /* emergency section */
     .emergency {
-       margin: 3em 2em 1em 2em;
-   }
-
-   .emergency:after {
-       display: none;
-   }
-
-   .emergency span {
-       text-align: center;
-   }
-
-   /* services section */
-   .services .services-list {
-       justify-content: center;
-   }
-
-    /* footer */
-    .footer-section {
-       display: flex;
-   }
-
-   .footer-section ul {
-       flex: 0 0 50%;
-       justify-content: center;
-   }
-
-   .footer-section p {
-       flex: 0 0 50%;
-       font-size: var(--font-size-body);
-       text-align: center;
-   }
-}
-
-@media ( max-width: 480px ) {
-     /* top navigation */
-    .top-nav ul {
-        justify-content: space-around;
+        margin: 3em 2em 1em 2em;
     }
 
-    .top-nav li:nth-child(6) {
-        margin: 0;
-        flex: 0 0 50%;
-    }
-
-    .top-nav li:last-child {
+    .emergency:after {
         display: none;
     }
 
-    /* header and navigation */
-    .site-header {
-       padding-bottom: 1.5em;
-   }
+    .emergency span {
+        text-align: center;
+    }
 
-   .site-title {
-       text-align: center;
-   }
+    /* services section */
+    .services .services-list {
+        justify-content: center;
+    }
 
-   .site-nav ul {
-       flex-direction: column;
-       align-items: center;
-   }
+    /* footer */
+    .footer-section {
+        display: flex;
+    }
 
-   .site-nav li {
-       width: 120px;
-       margin-top: 0.5em;
-   }
+    .footer-section ul {
+        flex: 0 0 50%;
+        justify-content: center;
+    }
 
-   .site-nav i {
-       padding-left: 0.5em;
-   }
-
-   .site-description {
-       text-align: center;
-       margin-top: 1em;
-   }
-
-   /* home page */
-   /* info section */
-   .info-section .info {
-       font-size: 1em;
-       padding-top: 1em;
-   }
-
-   .info-section a {
-       margin-top: 1em;
-   }
-
-   /* emergency section */
-   .emergency {
-       margin: 2em 2em 1em 2em;
-   }
-
-   .emergency:after {
-       display: none;
-   }
-
-   .emergency span {
-       text-align: center;
-       font-size: 1.2em;
-   }
-
-   /* services section */
-   .services .services-list {
-       justify-content: center;
-   }
-
-   /* footer */
-   .footer-section {
-       display: flex;
-   }
-
-   .footer-section ul {
-       flex: 0 0 100%;
-       justify-content: center;
-   }
-
-   .footer-section p {
-       flex: 0 0 100%;
-       font-size: var(--font-size-small);
-       text-align: center;
-   }
+    .footer-section p {
+        flex: 0 0 50%;
+        font-size: var(--font-size-body);
+        text-align: center;
+    }
 }
 
-@media ( max-width: 320px ) {
+@media (max-width: 480px) {
+
     /* top navigation */
     .top-nav ul {
         justify-content: space-around;
@@ -273,7 +241,7 @@
     }
 
     .top-nav li:nth-child(6) {
-       display: none;
+        display: none;
     }
 
     .top-nav li:last-child {
@@ -282,11 +250,17 @@
 
     /* header and navigation */
     .site-header {
+        display: flex;
         padding-bottom: 1.5em;
     }
 
     .site-title {
+        flex: 0 0 100%;
         text-align: center;
+    }
+
+    .site-nav {
+        flex: 0 0 100%;
     }
 
     .site-nav ul {
@@ -355,9 +329,99 @@
     }
 }
 
+@media (max-width: 320px) {
 
+    /* top navigation */
+    .top-nav ul {
+        justify-content: space-around;
+        padding-left: 0;
+    }
 
+    .top-nav li:nth-child(6) {
+        display: none;
+    }
 
+    .top-nav li:last-child {
+        display: none;
+    }
 
+    /* header and navigation */
+    .site-header {
+        display: flex;
+        padding-bottom: 1.5em;
+    }
 
+    .site-title {
+        flex: 0 0 100%;
+        text-align: center;
+    }
 
+    .site-nav {
+        flex: 0 0 100%;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-nav li {
+        width: 120px;
+        margin-top: 0.5em;
+    }
+
+    .site-nav i {
+        padding-left: 0.5em;
+    }
+
+    .site-description {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    /* home page */
+    /* info section */
+    .info-section .info {
+        font-size: 1em;
+        padding-top: 1em;
+    }
+
+    .info-section a {
+        margin-top: 1em;
+    }
+
+    /* emergency section */
+    .emergency {
+        margin: 2em 2em 1em 2em;
+    }
+
+    .emergency:after {
+        display: none;
+    }
+
+    .emergency span {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /* services section */
+    .services .services-list {
+        justify-content: center;
+    }
+
+    /* footer */
+    .footer-section {
+        display: flex;
+    }
+
+    .footer-section ul {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    .footer-section p {
+        flex: 0 0 100%;
+        font-size: var(--font-size-small);
+        text-align: center;
+    }
+}
