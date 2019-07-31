@@ -371,6 +371,10 @@
         text-align: center;
     }
 
+    .footer-section p:before {
+        width: 23em;
+    }
+
      /* about page */
      section.about .about-image ul {
         flex-wrap: wrap;
@@ -495,6 +499,10 @@
         flex: 0 0 100%;
         font-size: var(--font-size-small);
         text-align: center;
+    }
+
+    .footer-section p:before {
+        width: 15em;
     }
 
      /* about page */

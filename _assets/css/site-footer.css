@@ -14,23 +14,37 @@
 .footer-section ul {
     padding: 0;
     display: flex;
-    flex: 0 0 50%;
+    justify-content: center;
+    flex: 0 0 100%;
 }
 
 .footer-section li {
     margin-left: 1em;
 }
 
-.footer-section li:nth-child(6) {
-    margin-left: auto;
+.footer-section li .fa-facebook-square {
+    color: var(--color-background-facebook);
+}
+
+.footer-section li .fa-twitter {
+    color: var(--color-body-skyblue);
 }
 
 .footer-section p {
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-body-big);
     flex: 0 0 100%;
-    text-align: right;
+    text-align: center;
     padding: 0;
-    flex: 0 0 30%;
+}
+
+.footer-section p:before {
+    display: block;
+    content: '';
+    width: 30em;
+    height: 2px;
+    background: var(--color-services-title);
+    margin: 0.2em auto 0.5em auto;
+    border-radius: 0.3em;
 }
 
 .footer-section i {

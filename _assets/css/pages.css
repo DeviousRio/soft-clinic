@@ -72,11 +72,21 @@ section.about .about-image img {
 section.about .about-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.about .about-content span {
+    display: block;
+}
+
+section.about .about-content i {
+    color: var(--color-link-default);
+    padding-top: 0.5em;
 }
 
 section.about .about-content p {
     flex: 0 0 100%;
-    padding: 1em 5em 1em 5em;
+    padding: 0 5em 1em 5em;
     text-align: center;
 }
 
