@@ -68,6 +68,10 @@
         padding-bottom: 1.5em;
     }
 
+    body:not(.page-home) .site-description {
+        padding: 0;
+    }
+
     .site-title {
         flex: 0 0 100%;
         text-align: center;
@@ -136,6 +140,16 @@
         font-size: var(--font-size-body-big);
         text-align: center;
     }
+
+    /* gallery page */
+    section.gallery-section .gallery li {
+        flex: 0 0 45%;
+    }
+
+    /* team page */
+    section.team-section .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 640px) {
@@ -156,6 +170,10 @@
     .site-header {
         display: flex;
         padding-bottom: 1.5em;
+    }
+
+    body:not(.page-home) .site-description {
+        padding: 0;
     }
 
     .site-title {
@@ -230,6 +248,27 @@
         font-size: var(--font-size-body);
         text-align: center;
     }
+
+    /* about page */
+    section.about .about-image ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.about .about-image li {
+        flex: 0 0 60%;
+        margin-bottom: 0.5em;
+    }
+
+    /* gallery page */
+    section.gallery-section .gallery li {
+        flex: 0 0 45%;
+    }
+
+    /* team page */
+    section.team-section .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
@@ -252,6 +291,10 @@
     .site-header {
         display: flex;
         padding-bottom: 1.5em;
+    }
+
+    body:not(.page-home) .site-description {
+        padding: 0;
     }
 
     .site-title {
@@ -326,6 +369,27 @@
         flex: 0 0 100%;
         font-size: var(--font-size-small);
         text-align: center;
+    }
+
+     /* about page */
+     section.about .about-image ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.about .about-image li {
+        flex: 0 0 90%;
+        margin-bottom: 0.5em;
+    }
+
+     /* gallery page */
+     section.gallery-section .gallery li {
+        flex: 0 0 90%;
+    }
+
+     /* team page */
+     section.team-section .team {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -351,9 +415,17 @@
         padding-bottom: 1.5em;
     }
 
+    body:not(.page-home) .site-description {
+        padding: 0;
+    }
+
     .site-title {
         flex: 0 0 100%;
         text-align: center;
+    }
+
+    .site-header .site-description {
+        padding: 0;
     }
 
     .site-nav {
@@ -423,5 +495,21 @@
         flex: 0 0 100%;
         font-size: var(--font-size-small);
         text-align: center;
+    }
+
+     /* about page */
+     section.about .about-image ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.about .about-image li {
+        flex: 0 0 90%;
+        margin-bottom: 0.5em;
+    }
+
+     /* gallery page */
+     section.gallery-section .gallery li {
+        flex: 0 0 90%;
     }
 }
