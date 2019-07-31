@@ -80,6 +80,79 @@ section.about .about-content p {
     text-align: center;
 }
 
+/* Contacts page */
+section.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+section.contacts header {
+    flex: 0 0 100%;
+}
+
+section.contacts header h2 {
+    margin-top: 0.5em;
+    color: var(--color-link-default);
+}
+
+section.contacts header h2:after {
+    display: block;
+    content: '';
+    width: 10em;
+    height: 3px;
+    margin: 0.5em auto 1em auto;
+    background: var(--color-services-title);
+    border-radius: 0.3em;
+}
+
+section.contacts header p:nth-child(2) {
+    padding: 0 3em 1em 3em;
+}
+
+section.contacts header p {
+    margin-top: 0.5em;
+}
+
+section.contacts header p i {
+    color: var(--color-link-default);
+    padding-right: 0.3em;
+}
+
+section.contacts form {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+section.contacts .form-control {
+    flex: 0 0 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-link-default);
+    color: var(--color-body-text);
+    font-size: var(--font-size-body-bigger);
+    margin-bottom: 0.8em;
+}
+
+section.contacts form .submit {
+    color: var(--color-body-background);
+    background: var(--color-link-default); 
+    padding: 0.1em 0;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+section.contacts form .submit:hover {
+    color: var(--color-body-background);
+    background: var(--color-emergency-section);
+    border-bottom: 1px solid var(--color-emergency-section);
+}
+
 /* Gallery page */
 section.gallery-section {
     background: var(--color-body-gray);
