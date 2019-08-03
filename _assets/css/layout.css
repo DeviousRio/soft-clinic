@@ -7,7 +7,7 @@
 
 /* Emergency section */
 .emergency {
-    background: var(--color-emergency-section);
+    background-image: linear-gradient(to bottom, #e11414, #bd1316, #9a1316, #781315, #571111);
     color: var(--color-body-background);
     margin: 4em 4em 1em 4em;
     padding: 2em;

@@ -1,6 +1,5 @@
 /* Footer section */
 .footer-section {
-    background: var(--color-body-gray);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
