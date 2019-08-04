@@ -32,21 +32,16 @@
 }
 
 .info-section .info {
+    color: var(--color-body-text);
     font-size: 1.8em;
     padding: 1em 0 1em 0;
 }
 
 .info-section a {
-    /* font-size: var(--font-size-body);
-    color: var(--color-body-background);
-    background-image: linear-gradient(to bottom, #e11414, #bd1316, #9a1316, #781315, #571111);
-    padding: 0.5em;
-    margin-top: 0.5em;
-    border-radius: 0.3em; */
     font-size: var(--font-size-body);
     border: 2px solid transparent;
     background: #404040;
-    color: #ffffff ;
+    color: var(--color-body-background) ;
     font-weight: 100;
     padding: 0.6em 1em;
     text-transform: uppercase;
@@ -56,8 +51,8 @@
 }
 
 .info-section a:hover {
-    color: #404040 ;
-    font-weight: 700 ;
+    color: #404040;
+    font-weight: bold;
     background: transparent;
     letter-spacing: 3px;
     border: 2px solid #404040;

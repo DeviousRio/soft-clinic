@@ -53,6 +53,26 @@
 @media (max-width: 768px) {
 
     /* header and navigation */
+    .site-nav {
+        display: none;
+    }
+    
+    .nav-toggle-button {
+        display: block;
+    }
+
+    .nav-toggle-button .close {
+        display: none;
+    }
+
+    .nav-toggle:checked + .site-header .nav-toggle-button .open {
+        display: none;
+    }
+
+    .nav-toggle:checked + .site-header .nav-toggle-button .close {
+        display: block;
+    }
+
     .site-header {
         display: flex;
         padding-bottom: 1.5em;

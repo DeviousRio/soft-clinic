@@ -17,6 +17,7 @@
 
 .site-nav a {
     display: block;
+    color: var(--color-link-default);
     padding: 0.3em 0.5em;
     box-shadow: 0 5px 15px -5px #00000070;
     border: 1px solid transparent;
@@ -38,4 +39,23 @@
 .site-description {
     flex: 0 0 100%;
     font-weight: normal;
+}
+
+.nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.nav-toggle-button {
+    display: none;
+    margin: 0 auto;
+}
+
+.nav-toggle-button span i {
+    font-size: var(--font-size-body-biggest);
+}
+
+.nav-toggle:checked + .site-header .site-nav {
+    display: block;
 }
