@@ -84,6 +84,7 @@ body:not(.page-home) .site-header {
   padding: 0 1em 1em 1em; }
 
 body:not(.page-home) .site-description {
+  display: block;
   font-size: 2em;
   padding: 1em;
   text-align: center; }
@@ -656,7 +657,29 @@ section.team-section .details i {
   justify-content: center;
   flex-wrap: wrap; }
 
+/* site logo */
+.site-header .site-logo {
+  flex: 0 0 8%;
+  display: block;
+  overflow: hidden;
+  position: relative; }
+
+.site-header .site-logo:after {
+  display: block;
+  content: '';
+  padding-top: 100%; }
+
+.site-header .site-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .site-header .site-title {
+  margin-top: 0.2em;
   font-family: var(--font-family-libre); }
 
 .info-section {
@@ -737,12 +760,13 @@ section.team-section .details i {
   border-radius: 0.3em; }
 
 .footer-section i {
-  font-size: 1.3em; }
+  font-size: 1.5em; }
 
 /* Site navigation */
 .site-nav ul {
   display: flex;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 0.5em; }
 
 .site-nav li {
   display: block;
@@ -772,6 +796,7 @@ section.team-section .details i {
   margin-right: 0.3em; }
 
 .site-description {
+  display: none;
   flex: 0 0 100%;
   font-weight: normal; }
 
@@ -796,6 +821,8 @@ section.team-section .details i {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  .site-nav ul {
+    margin-top: 1em; }
   /* home page */
   /* info section */
   .info-section {
@@ -824,8 +851,15 @@ section.team-section .details i {
   .services .services-list {
     justify-content: space-around; } }
 
+@media (max-width: 910px) {
+  /* header */
+  .site-header {
+    justify-content: center; } }
+
 @media (max-width: 840px) {
   /* header */
+  .site-header {
+    justify-content: center; }
   .site-header .site-title {
     font-size: 1.7em; }
   .site-nav ul {
@@ -835,6 +869,8 @@ section.team-section .details i {
 
 @media (max-width: 768px) {
   /* header and navigation */
+  .site-header .site-logo {
+    display: none; }
   .site-nav {
     display: none; }
   .nav-toggle-button {

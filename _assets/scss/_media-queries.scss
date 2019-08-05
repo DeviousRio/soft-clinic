@@ -7,6 +7,10 @@
         align-items: center;
     }
 
+    .site-nav ul {
+        margin-top: 1em;
+    }
+
     /* home page */
     /* info section */
     .info-section {
@@ -50,9 +54,20 @@
     }
 }
 
+@media (max-width: 910px) {
+    /* header */ 
+    .site-header {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 840px) {
     
     /* header */ 
+    .site-header {
+        justify-content: center;
+    }
+
     .site-header .site-title {
         font-size: 1.7em;
     }
@@ -69,6 +84,10 @@
 @media (max-width: 768px) {
 
     /* header and navigation */
+    .site-header .site-logo {
+        display: none;
+    }
+
     .site-nav {
         display: none;
     }

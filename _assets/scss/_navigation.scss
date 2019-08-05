@@ -2,6 +2,7 @@
 .site-nav ul {
     display: flex;
     padding: 0;
+    margin-bottom: 0.5em;
 }
 
 .site-nav li {
@@ -37,6 +38,7 @@
 }
 
 .site-description {
+    display: none;
     flex: 0 0 100%;
     font-weight: normal;
 }

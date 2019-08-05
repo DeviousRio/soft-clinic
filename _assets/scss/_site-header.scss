@@ -19,7 +19,31 @@
     flex-wrap: wrap;
 }
 
+/* site logo */
+.site-header .site-logo {
+    flex: 0 0 8%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.site-header .site-logo:after {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+.site-header .site-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .site-header .site-title {
+    margin-top: 0.2em;
     font-family: var(--font-family-libre);
 }
 

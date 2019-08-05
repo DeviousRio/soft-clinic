@@ -7,6 +7,7 @@ body:not(.page-home) .site-header {
 }
 
 body:not(.page-home) .site-description {
+    display: block;
     font-size: 2em;
     padding: 1em;
     text-align: center;
