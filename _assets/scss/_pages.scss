@@ -8,7 +8,7 @@ body:not(.page-home) .site-header {
 
 body:not(.page-home) .site-description {
     font-size: 2em;
-    padding: 2em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -55,15 +55,13 @@ section.about .about-image ul {
 
 section.about .about-image li {
     flex: 0 0 30%;
-    -webkit-animation: slideIn 0.3s ease-in;
-            animation: slideIn 0.3s ease-in;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation: slideIn 0.3s ease-in;
+    animation-fill-mode: both;
 }
 
-section.about .about-image li:nth-child(2) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s }
-section.about .about-image li:nth-child(3) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s }
-section.about .about-image li:nth-child(4) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s }
+section.about .about-image li:nth-child(2) { animation-delay: 0.2s }
+section.about .about-image li:nth-child(3) { animation-delay: 0.4s }
+section.about .about-image li:nth-child(4) { animation-delay: 0.6s }
 
 section.about .about-image img {
     display: block;
@@ -203,38 +201,24 @@ section.gallery-section .gallery li {
     border-top: 1px solid var(--color-services-title);
     border-bottom: 1px solid var(--color-services-title);
     position: relative;
-    -webkit-animation: slideIn 0.3s ease-in;
-            animation: slideIn 0.3s ease-in;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation: slideIn 0.3s ease-in;
+    animation-fill-mode: both;
 }
 
-section.gallery-section .gallery li:nth-child(2) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s }
-section.gallery-section .gallery li:nth-child(3) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s }
-section.gallery-section .gallery li:nth-child(4) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s }
-section.gallery-section .gallery li:nth-child(5) { -webkit-animation-delay: 0.8s; animation-delay: 0.8s }
-section.gallery-section .gallery li:nth-child(6) { -webkit-animation-delay: 1.0s; animation-delay: 1.0s }
-section.gallery-section .gallery li:nth-child(7) { -webkit-animation-delay: 1.2s; animation-delay: 1.2s }
-section.gallery-section .gallery li:nth-child(8) { -webkit-animation-delay: 1.4s; animation-delay: 1.4s }
-section.gallery-section .gallery li:nth-child(9) { -webkit-animation-delay: 1.6s; animation-delay: 1.6s }
-section.gallery-section .gallery li:nth-child(10) { -webkit-animation-delay: 1.8s; animation-delay: 1.8s }
-section.gallery-section .gallery li:nth-child(11) { -webkit-animation-delay: 2.0s; animation-delay: 2.0s }
-section.gallery-section .gallery li:nth-child(12) { -webkit-animation-delay: 2.2s; animation-delay: 2.2s }
-section.gallery-section .gallery li:nth-child(13) { -webkit-animation-delay: 2.4s; animation-delay: 2.4s }
-section.gallery-section .gallery li:nth-child(14) { -webkit-animation-delay: 2.6s; animation-delay: 2.6s }
-section.gallery-section .gallery li:nth-child(15) { -webkit-animation-delay: 2.8s; animation-delay: 2.8s }
-
-@-webkit-keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-2em);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+section.gallery-section .gallery li:nth-child(2) { animation-delay: 0.2s }
+section.gallery-section .gallery li:nth-child(3) { animation-delay: 0.4s }
+section.gallery-section .gallery li:nth-child(4) { animation-delay: 0.6s }
+section.gallery-section .gallery li:nth-child(5) { animation-delay: 0.8s }
+section.gallery-section .gallery li:nth-child(6) { animation-delay: 1.0s }
+section.gallery-section .gallery li:nth-child(7) { animation-delay: 1.2s }
+section.gallery-section .gallery li:nth-child(8) { animation-delay: 1.4s }
+section.gallery-section .gallery li:nth-child(9) { animation-delay: 1.6s }
+section.gallery-section .gallery li:nth-child(10) { animation-delay: 1.8s }
+section.gallery-section .gallery li:nth-child(11) { animation-delay: 2.0s }
+section.gallery-section .gallery li:nth-child(12) { animation-delay: 2.2s }
+section.gallery-section .gallery li:nth-child(13) { animation-delay: 2.4s }
+section.gallery-section .gallery li:nth-child(14) { animation-delay: 2.6s }
+section.gallery-section .gallery li:nth-child(15) { animation-delay: 2.8s }
 
 @keyframes slideIn {
     from {
@@ -337,10 +321,8 @@ section.team-section .team li {
     display: block;
     grid-column: span 1;
     text-align: center;
-    -webkit-animation: slideIn 0.3s ease-in;
-            animation: slideIn 0.3s ease-in;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation: slideIn 0.3s ease-in;
+    animation-fill-mode: both;
 }
 
 section.team-section span {
@@ -369,12 +351,15 @@ section.team-section span:after {
     padding-top: 100%;
 }
 
-section.team-section .team li:nth-child(2) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s }
-section.team-section .team li:nth-child(3) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s }
-section.team-section .team li:nth-child(4) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s }
-section.team-section .team li:nth-child(5) { -webkit-animation-delay: 0.8s; animation-delay: 0.8s }
-section.team-section .team li:nth-child(6) { -webkit-animation-delay: 1.0s; animation-delay: 1.0s }
-section.team-section .team li:nth-child(7) { -webkit-animation-delay: 1.2s; animation-delay: 1.2s }
+section.team-section .team li:nth-child(1) { animation-delay: 0.2s }
+section.team-section .team li:nth-child(2) { animation-delay: 0.4s }
+section.team-section .team li:nth-child(3) { animation-delay: 0.6s }
+section.team-section .team li:nth-child(4) { animation-delay: 0.8s }
+section.team-section .team li:nth-child(5) { animation-delay: 1.0s }
+section.team-section .team li:nth-child(6) { animation-delay: 1.2s }
+section.team-section .team li:nth-child(7) { animation-delay: 1.4s }
+section.team-section .team li:nth-child(8) { animation-delay: 1.6s }
+section.team-section .team li:nth-child(9) { animation-delay: 1.8s }
 
 section.team-section img {
     display: block;
