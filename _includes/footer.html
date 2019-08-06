@@ -1,4 +1,16 @@
 <section class="footer-section location-{{ include.location }}">
+    
+    <ul class="quick-links">
+        {% for item in site.pages %}
+            {% if item.title %}
+                <li{% if item.url == page.url %} class="selected"{% endif %}>
+                    <a href="{{ site.baseurl }}{{ item.url }}">
+                        {{ item.title }}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
 
     <ul>
         <li>
@@ -7,6 +19,10 @@
 
         <li>
             <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
         </li>
 
         <li>

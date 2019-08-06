@@ -509,6 +509,10 @@
         justify-content: center;
     }
 
+    .footer-section ul li:nth-child(1) {
+        margin-left: 0;
+    }
+
     .footer-section p {
         flex: 0 0 100%;
         font-size: var(--font-size-small);

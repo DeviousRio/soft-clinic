@@ -6,6 +6,29 @@
     padding: 1em 0;
 }
 
+.footer-section .quick-links {
+    padding-bottom: 0.5em;
+    justify-content: center;
+}
+
+.footer-section .quick-links li {
+    padding: 0 0.5em 0 0.5em;
+}
+
+.footer-section .quick-links li:not(:first-child) {
+    border-left: 1px solid #404040;
+    margin-left: 0;
+}
+
+.footer-section .quick-links li:nth-child(4) {
+    order: 1;
+}
+
+.footer-section .quick-links li a {
+    color: #404040;
+    font-weight: bold;
+}
+
 .footer-section h6 {
     font-weight: normal;
 }
