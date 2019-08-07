@@ -52,14 +52,13 @@
     color: var(--color-body-skyblue);
 }
 
-.footer-section p {
-    font-size: var(--font-size-body-big);
+.footer-section h6 {
     flex: 0 0 100%;
     text-align: center;
     padding: 0;
 }
 
-.footer-section p:before {
+.footer-section h6:before {
     display: block;
     content: '';
     width: 30em;
