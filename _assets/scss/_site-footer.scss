@@ -29,8 +29,16 @@
     font-weight: bold;
 }
 
+.footer-section .quick-links li a:hover {
+    color: var(--color-link-default);
+}
+
 .footer-section h6 {
     font-weight: normal;
+}
+
+.footer-section .footer-contacts {
+    padding: 0.5em 0 0.5em 0;
 }
 
 .footer-section ul {
@@ -70,4 +78,9 @@
 
 .footer-section i {
     font-size: 1.5em;
+}
+
+.footer-section i:hover {
+    transition: 0.5s;
+    transform: rotate(360deg);
 }

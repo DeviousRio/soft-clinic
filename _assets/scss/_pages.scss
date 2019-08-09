@@ -91,6 +91,52 @@ section.about .about-content p {
     text-align: center;
 }
 
+/* Testimonials*/ 
+section.about .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.about .testimonials-title {
+    flex: 0 0 100%;
+    text-align: center;
+    color: var(--color-link-default);
+    margin-top: 1em;
+}
+
+section.about .testimonials-title:after {
+    display: block;
+    content: '';
+    width: 15em;
+    height: 3px;
+    margin: 0.5em auto 0 auto;
+    background: var(--color-services-title);
+    border-radius: 0.3em;
+}
+
+section.about .testimonials-content {
+    margin: 0;
+    padding: 1em 0 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.about .testimonials-content li {
+    text-align: center;
+    flex: 0 0 47%;
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+
+section.about .testimonials-content li span {
+    display: block;
+}
+
+section.about .testimonials-content .client-name {
+    margin-top: 0.5em;
+    color: var(--color-link-default);
+}
+
 /* Contacts page */
 section.contacts {
     display: flex;

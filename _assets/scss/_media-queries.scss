@@ -400,6 +400,18 @@
         margin-bottom: 0.5em;
     }
 
+    section.about .testimonials-title {
+        font-size: 1.7em;
+    }
+
+    section.about .testimonials-title:after {
+        width: 7em;
+    }
+
+    section.about .testimonials-content li {
+        flex: 0 0 90%;
+    }
+
      /* gallery page */
      section.gallery-section .gallery li {
         flex: 0 0 90%;
