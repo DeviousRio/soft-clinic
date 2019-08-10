@@ -218,9 +218,13 @@ section.contacts {
   justify-content: center; }
 
 section.contacts header {
-  flex: 0 0 100%; }
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 section.contacts header h2 {
+  flex: 0 0 100%;
   margin-top: 0.5em;
   color: var(--color-link-default); }
 
@@ -233,10 +237,17 @@ section.contacts header h2:after {
   background: var(--color-services-title);
   border-radius: 0.3em; }
 
+section.contacts header iframe {
+  flex: 0 0 75%; }
+
 section.contacts header p:nth-child(2) {
-  padding: 0 3em 1em 3em; }
+  padding: 0 3em 2em 3em; }
+
+section.contacts header p:nth-child(4) {
+  margin-top: 2em; }
 
 section.contacts header p {
+  flex: 0 0 75%;
   margin-top: 0.5em; }
 
 section.contacts header p i {
@@ -1090,6 +1101,9 @@ section.team-section .details i {
   section.about .about-image li {
     flex: 0 0 60%;
     margin-bottom: 0.5em; }
+  /* contacts page */
+  section.contacts header p:nth-child(2) {
+    padding: 0 0 2em 0; }
   /* gallery page */
   section.gallery-section .gallery li {
     flex: 0 0 45%; }
@@ -1160,6 +1174,9 @@ section.team-section .details i {
     width: 7em; }
   section.about .testimonials-content li {
     flex: 0 0 90%; }
+  /* contacts page */
+  section.contacts header iframe {
+    height: 300px; }
   /* gallery page */
   section.gallery-section .gallery li {
     flex: 0 0 90%; }

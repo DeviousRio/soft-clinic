@@ -297,6 +297,11 @@
         margin-bottom: 0.5em;
     }
 
+    /* contacts page */
+    section.contacts header p:nth-child(2) {
+        padding: 0 0 2em 0;
+    }
+
     /* gallery page */
     section.gallery-section .gallery li {
         flex: 0 0 45%;
@@ -415,6 +420,11 @@
     section.about .testimonials-content li {
         flex: 0 0 90%;
     }
+
+    /* contacts page */
+    section.contacts header  iframe {
+        height: 300px;
+    } 
 
      /* gallery page */
      section.gallery-section .gallery li {

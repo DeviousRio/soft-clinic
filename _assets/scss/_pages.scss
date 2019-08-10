@@ -153,9 +153,13 @@ section.contacts {
 
 section.contacts header {
     flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 section.contacts header h2 {
+    flex: 0 0 100%;
     margin-top: 0.5em;
     color: var(--color-link-default);
 }
@@ -170,11 +174,20 @@ section.contacts header h2:after {
     border-radius: 0.3em;
 }
 
+section.contacts header iframe {
+    flex: 0 0 75%;
+}
+
 section.contacts header p:nth-child(2) {
-    padding: 0 3em 1em 3em;
+    padding: 0 3em 2em 3em;
+}
+
+section.contacts header p:nth-child(4) {
+    margin-top: 2em;
 }
 
 section.contacts header p {
+    flex: 0 0 75%;
     margin-top: 0.5em;
 }
 
