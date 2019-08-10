@@ -1,6 +1,6 @@
 /* Site */
 .site {
-    max-width: 85em;
+    max-width: var(--layout-main-width);
     margin: 0 auto;
     padding: 0 1em 0 1em;
 }

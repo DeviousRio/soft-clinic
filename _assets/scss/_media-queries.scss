@@ -390,6 +390,10 @@
     }
 
      /* about page */
+     section.about .about-page-description {
+        padding: 0 1em 2em 1em;
+    }
+
      section.about .about-image ul {
         flex-wrap: wrap;
         justify-content: center;

@@ -15,7 +15,7 @@
   --color-emergency-section: #FF1E1E;
   --color-body-skyblue: #6BD3E0;
   --color-background-facebook: #4267B2;
-  --layout-main-width: 90em; }
+  --layout-main-width: 85em; }
 
 *, *:before, *:after {
   margin: 0;
@@ -112,6 +112,11 @@ section.about .about-title:after {
   margin: 0.5em auto 3em auto;
   background: var(--color-services-title);
   border-radius: 0.3em; }
+
+section.about .about-page-description {
+  flex: 0 0 90%;
+  text-align: center;
+  padding: 0 4em 2em 4em; }
 
 section.about .about-image {
   display: flex;
@@ -362,6 +367,18 @@ section.gallery-section .gallery li:nth-child(15) {
   -webkit-animation-delay: 2.8s;
           animation-delay: 2.8s; }
 
+section.gallery-section .gallery li:nth-child(16) {
+  -webkit-animation-delay: 3.0s;
+          animation-delay: 3.0s; }
+
+section.gallery-section .gallery li:nth-child(17) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s; }
+
+section.gallery-section .gallery li:nth-child(18) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s; }
+
 @-webkit-keyframes slideIn {
   from {
     opacity: 0;
@@ -397,9 +414,7 @@ section.gallery-section .gallery span:before {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* transition: opacity 0.3s ease-in; */ }
+  bottom: 0; }
 
 section.gallery-section .gallery span:after {
   display: block;
@@ -440,7 +455,7 @@ section.team-section .team-title:after {
 
 section.team-section .team-description {
   text-align: center;
-  padding: 0 2em 2em 2em; }
+  padding: 0 5em 3em 5em; }
 
 section.team-section .team {
   display: grid;
@@ -551,7 +566,7 @@ section.team-section .details i {
 
 /* Site */
 .site {
-  max-width: 85em;
+  max-width: var(--layout-main-width);
   margin: 0 auto;
   padding: 0 1em 0 1em; }
 
@@ -1131,6 +1146,8 @@ section.team-section .details i {
   .footer-section h6:before {
     width: 23em; }
   /* about page */
+  section.about .about-page-description {
+    padding: 0 1em 2em 1em; }
   section.about .about-image ul {
     flex-wrap: wrap;
     justify-content: center; }
