@@ -248,7 +248,8 @@ section.contacts header p:nth-child(4) {
 
 section.contacts header p {
   flex: 0 0 75%;
-  margin-top: 0.5em; }
+  margin-top: 0.5em;
+  font-size: var(--font-size-body-biggest); }
 
 section.contacts header p i {
   color: var(--color-link-default);
@@ -1175,6 +1176,8 @@ section.team-section .details i {
   section.about .testimonials-content li {
     flex: 0 0 90%; }
   /* contacts page */
+  section.contacts header p {
+    font-size: var(--font-size-body); }
   section.contacts header iframe {
     height: 300px; }
   /* gallery page */
